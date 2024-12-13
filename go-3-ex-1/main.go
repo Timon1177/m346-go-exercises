@@ -20,6 +20,80 @@ const (
 func outputWithZodiacSign(p Person) {
 	var zodiacSign rune = '?'
 
+	if p.Month == 1{
+		if p.Day <= 20{
+			zodiacSign = Capricornus
+		}else{
+			zodiacSign = Aquarius
+		}
+	}else if p.Month == 2{
+		if p.Day <= 19{
+			zodiacSign = Aquarius
+		}else{
+			zodiacSign = Pisces
+		}
+	}else if p.Month == 3{
+		if p.Day <= 20{
+			zodiacSign = Pisces
+		}else{
+			zodiacSign = Aries
+		}
+	}else if p.Month == 4{
+		if p.Day <= 20{
+			zodiacSign = Pisces
+		}else{
+			zodiacSign = Taurus
+		}
+	}else if p.Month == 5{
+		if p.Day <= 20{
+			zodiacSign = Taurus
+		}else{
+			zodiacSign = Gemini
+		}
+	}else if p.Month == 6{
+		if p.Day <= 21{
+			zodiacSign = Gemini
+		}else{
+			zodiacSign = Cancer
+		}
+	}else if p.Month == 7{
+		if p.Day <= 22{
+			zodiacSign = Cancer
+		}else{
+			zodiacSign = Leo
+		}
+	}else if p.Month == 8{
+		if p.Day <= 23{
+			zodiacSign = Leo
+		}else{
+			zodiacSign = Virgo
+		}
+	}else if p.Month == 9{
+		if p.Day <= 23{
+			zodiacSign = Virgo
+		}else{
+			zodiacSign = Libra
+		}
+	}else if p.Month == 10{
+		if p.Day <= 23{
+			zodiacSign = Libra
+		}else{
+			zodiacSign = Scorpius
+		}
+	}else if p.Month == 11{
+		if p.Day <= 23{
+			zodiacSign = Scorpius
+		}else{
+			zodiacSign = Sagittarius
+		}
+	}else{
+		if p.Day <= 21{
+			zodiacSign = Sagittarius
+		}else{
+			zodiacSign = Capricornus
+		}
+	}
+
 	// TODO: Assign proper value to zodiacSign using if/else branching.
 	// NOTE: The runes are defined above as constants.
 
